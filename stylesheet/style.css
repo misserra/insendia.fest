@@ -1,0 +1,120 @@
+@import 'reset.css';
+@import 'fonts.css';
+@import 'layout.css';
+@import 'animation.css';
+@import 'adaptive.css';
+
+body {
+    background: rgb(1,2,22);
+    background: linear-gradient(-180deg, rgba(1,2,22,1) 0%, rgba(22,41,101,1) 35%, rgba(145,115,115,1) 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.arch {
+    display: flex;  
+    justify-content: center;
+    align-items: top;
+    width: 100vw;
+    height: 100vh;  
+}
+
+.struct_arch {
+    position: relative;
+    width: min-content;
+    height: min-content;
+    line-height: 0;
+}
+
+.img_arch {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.img_star_1 {
+    position: absolute;
+    width: 7.6vw;
+    height: 42vh;
+    top: 27vh;
+    left: 6vw;
+}
+.img_star_2 {
+position: absolute;
+width: 7.13vw;
+height: 29.63vh;
+top: 23vh;
+left: 9vw;
+}
+.img_star_3 {
+    position: absolute;
+    width: 7.13vw;
+    height: 38.70vh;
+    top: 17.5vh;
+    left: 12.5vw;
+    }
+.img_star_4 {
+    position: absolute;
+    width: 1.94vw;
+    height: 39.35vh;
+    top: 14.5vh;
+    left: 18.5vw;
+    }
+.img_star_5 {
+    position: absolute;
+    width: 6.67vw;
+    height: 37.78vh;
+    top: 12vh;
+    left: 19vw;
+    }
+.img_star_6 {
+    position: absolute;
+    width: 8.15vw;
+    height: 22.96vh;
+    top: 11vh;
+    left: 20vw;
+    }
+.img_star_7 {
+    position: absolute;
+    width: 10.56vw;
+    height: 37.046vh;
+    top: 10vh;
+    left: 21vw;
+    }
+.img_star_8 {
+    position: absolute;
+    width: 1.76vw;
+    height: 27.13vh;
+    top: 9vh;
+    left: 26vw;
+    }
+.img_star_9 {
+    position: absolute;
+    width: 1.76vw;
+    height: 15.19vh;
+    top: 9vh;
+    left: 27vw;
+    }
+.img_star_10 {
+    position: absolute;
+    width: 4.44vw;
+    height: 13.33vh;
+    top: 9vh;
+    left: 27vw;
+    }
+.img_star_11 {
+    position: absolute;
+    width: 8.15vw;
+    height: 35.28vh;
+    top: 8.5vh;
+    left: 27vw;
+    }
+.img_star_12 {
+    position: absolute;
+    width: 4.44vw;
+    height: 30.46vh;
+    top: 8.5vh;
+    left: 32vw;
+    }
+    
+

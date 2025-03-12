@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SwankyandMooMoo';
+    src: url('../fonts/SwankyandMooMoo-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TenorSans';
+    src: url('../fonts/TenorSans.ttf') format('truetype');
+    src: url('../fonts/TenorSans.ttf') format('woff');
+    font-style:normal;
+}
