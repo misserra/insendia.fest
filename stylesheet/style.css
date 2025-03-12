@@ -12,109 +12,169 @@ body {
 }
 
 .arch {
-    display: flex;  
+    display: flex;
     justify-content: center;
-    align-items: top;
-    width: 100vw;
-    height: 100vh;  
 }
-
-.struct_arch {
-    position: relative;
-    width: min-content;
-    height: min-content;
-    line-height: 0;
-}
-
 .img_arch {
-    max-height: 100vh;
-    max-width: 100vw;
-    height: 100vh;
+    width: 69.48vw;
+    height: 52.55vw;
 }
 
 .img_star_1 {
     position: absolute;
     width: 7.6vw;
-    height: 42vh;
-    top: 27vh;
-    left: 6vw;
+    height: 23.65vw;
+    top: 14vw;
+    left: 21vw;
 }
 .img_star_2 {
 position: absolute;
 width: 7.13vw;
-height: 29.63vh;
-top: 23vh;
-left: 9vw;
+height: 16.67vw;
+top: 12vw;
+left: 25vw;
 }
 .img_star_3 {
     position: absolute;
     width: 7.13vw;
-    height: 38.70vh;
-    top: 17.5vh;
-    left: 12.5vw;
+    height: 21.77vw;
+    top: 10.5vw;
+    left: 27vw;
     }
 .img_star_4 {
     position: absolute;
     width: 1.94vw;
-    height: 39.35vh;
-    top: 14.5vh;
-    left: 18.5vw;
+    height: 22.19vw;
+    top: 8.5vw;
+    left: 32vw;
     }
 .img_star_5 {
     position: absolute;
     width: 6.67vw;
-    height: 37.78vh;
-    top: 12vh;
-    left: 19vw;
+    height: 21.25vw;
+    top: 7.5vw;
+    left: 32vw;
     }
 .img_star_6 {
     position: absolute;
     width: 8.15vw;
-    height: 22.96vh;
-    top: 11vh;
-    left: 20vw;
+    height: 12.92vw;
+    top: 6.7vw;
+    left: 34vw;
     }
 .img_star_7 {
     position: absolute;
     width: 10.56vw;
-    height: 37.046vh;
-    top: 10vh;
-    left: 21vw;
+    height: 20.83vw;
+    top: 5.7vw;
+    left: 36vw;
     }
 .img_star_8 {
     position: absolute;
     width: 1.76vw;
-    height: 27.13vh;
-    top: 9vh;
-    left: 26vw;
+    height: 15.26vw;
+    top: 4.8vw;
+    left: 42vw;
     }
 .img_star_9 {
     position: absolute;
     width: 1.76vw;
-    height: 15.19vh;
-    top: 9vh;
-    left: 27vw;
+    height: 8.54vw;
+    top: 4.6vw;
+    left: 44vw;
     }
 .img_star_10 {
     position: absolute;
     width: 4.44vw;
-    height: 13.33vh;
-    top: 9vh;
-    left: 27vw;
+    height: 7.50vw;
+    top: 4.6vw;
+    left: 44vw;
     }
 .img_star_11 {
     position: absolute;
     width: 8.15vw;
-    height: 35.28vh;
-    top: 8.5vh;
-    left: 27vw;
+    height: 19.84vw;
+    top: 4.5vw;
+    right: 47vw;
     }
 .img_star_12 {
     position: absolute;
     width: 4.44vw;
-    height: 30.46vh;
-    top: 8.5vh;
-    left: 32vw;
+    height: 17.14vw;
+    top: 4.6vw;
+    right: 46vw;
     }
+    .img_star_13 {
+    position: absolute;
+    width: 4.44vw;
+    height: 14.64vw;
+    top: 4.6vw;
+    right: 44vw;
+    }
+.img_star_14 {
+    position: absolute;
+    width: 7.13vw;
+    height: 19.90vw;
+    top: 5.4vw;
+    right: 39vw;
+    }
+.img_star_15 {
+    position: absolute;
+    width: 1.85vw;
+    height: 15.47vw;
+    top: 6.5vw;
+    right: 38vw;
+    }
+.img_star_16 {
+    position: absolute;
+    width: 4.44vw;
+    height: 16.41vw;
+    top: 7.5vw;
+    right: 34vw;
+    }
+.img_star_17 {
+    position: absolute;
+    width: 7.13vw;
+    height: 20.10vw;
+    top: 9vw;
+    right: 30vw;
+    }
+.img_star_18 {
+    position: absolute;
+    width: 6.39vw;
+    height: 22.50vw;
+    top: 11.5vw;
+    right: 27vw;
+    }
+.img_star_19 {
+    position: absolute;
+    width: 5.37vw;
+    height: 15.94vw;
+    top: 15vw;
+    right: 24.5vw;
+    }
+.name {
+    position: absolute;
+}
+.pic {
+    position: absolute;
+    width: 38.02vw;
+    height: 9.69vw;
+    top: 3vw;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: swanky-and-moo-moo;
+    color: #ffffff;
+    font-size: 9vw;
+    filter: blur(1px);
+    position: absolute;
+}
+    
+
+    
+
+
     
 

@@ -1,11 +1,17 @@
 @font-face {
-    font-family: 'SwankyandMooMoo';
-    src: url('../fonts/SwankyandMooMoo-Regular.ttf') format('truetype');
+    font-family: 'swanky-and-moo-moo';
+    src: url('../fonts/swanky-and-moo-moo.otf') format('opentype');
     font-style: normal;
 }
+body {
+    font-family: "Swanky and Moo Moo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 @font-face {
     font-family: 'TenorSans';
-    src: url('../fonts/TenorSans.ttf') format('truetype');
-    src: url('../fonts/TenorSans.ttf') format('woff');
+    src: url('../fonts/TenorSans.ttf') format('truetype'),
+     url('../fonts/TenorSans.woff') format('woff');
     font-style:normal;
 }
