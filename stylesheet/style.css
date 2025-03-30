@@ -168,7 +168,9 @@ left: 25vw;
     background: url("..\\images/button.svg");
     background-position: center;
     background-size: cover;
+    animation: pulse 0.5s;
 }
+
 .section2 {
     width: 100vw;
     height: 72.08vw;
@@ -203,6 +205,7 @@ left: 25vw;
     top: 120vw;
     width: 45.52vw;
     height: 8.44vw;
+    animation: fadeIn 0.5s ease-in-out; 
 }
 
 .choiseButton {
@@ -214,8 +217,16 @@ justify-content: center;
     height: 5.42vw;
     position: absolute;
     top: 165vw;
+    cursor: pointer;
 }
 
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden; 
+    padding: 3vw 0 3.13vw; 
+}
 
 .slider-container {
     position: relative;
@@ -225,10 +236,8 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 19vw; /* Сдвиг вправо */
-    top: 3vw;  /* Сдвиг вниз */
-    margin-right: 60px; /* Чтобы не обрезались правые слайды */
-    margin-bottom: 60px; /* Чтобы не обрезались нижние части */
+    top: 3vw; 
+    margin: 0 auto;
 }
 
 .slider {
@@ -273,33 +282,41 @@ justify-content: center;
     box-sizing: border-box;
     display: block;
 }
-
-.slide-title {
+.slide-title-naming {
     position: absolute;
     top: 23vw;
-    font-size: 3.75vw;
-    color: #FF6F00;
-    filter: blur(4px);
-    -webkit-text-stroke: 0.5vw #FF6F00;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     text-align: center;
-    font-family: swanky-and-moo-moo;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    opacity: 0; /* Начальное состояние */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+.slide.active .slide-title-naming {
+    opacity: 1;
+  }
+
+.slide-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 3.75vw;
+  color: transparent;
+  -webkit-text-stroke: 0.5vw #FF6F00;
+  filter: blur(4px);
+  font-family: 'swanky-and-moo-moo';
 }
 .slide-title-white {
     position: absolute;
-    top: 23vw;
+    top: 0;
+    left: 0;
+    right: 0;
     font-size: 3.75vw;
-    color: #ffffff;
+    color: white;
     filter: blur(0.5px);
-    text-align: center;
-    font-family: swanky-and-moo-moo;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    font-family: 'swanky-and-moo-moo';
 }
 
 .slide.active .slide-title {
@@ -409,28 +426,35 @@ justify-content: center;
     width: 100vw;
     height: 64.06vw;
 }
+
+#draggable {
+    cursor: grab;
+    position: absolute;
+    /* user-select: none; */
+}
+
+.draggable {
+    position: absolute;
+}
+
+.dragzone {
+    width: 28.85vw;
+    height: 28.05vw;
+    position: absolute;
+    top: 195vw;
+    left: 35.5vw;
+    z-index: 2;
+    
+}
 .eat {
     display: flex;
     justify-content: center;
 }
-.mealback {
+.dishes {
     position: absolute;
-    color: #FF6F00;
-    font-family:swanky-and-moo-moo;
-    filter: blur(4px);
-    top: 185vw;
-    font-size: 6.41vw; 
-    -webkit-text-stroke: 0.5vw #FF6F00;
-    text-align: center;
-}
-.meal {
-    position: absolute;
-    color: #ffffff;
-    font-family:swanky-and-moo-moo;
-    filter: blur(0.5px);
-    top: 185vw;
-    font-size: 6.41vw;
-    text-align: center;
+    width: 88.02vw;
+    height: 6.25vw;
+    top: 180vw;
 }
 .plate {
     display: flex;
@@ -441,73 +465,113 @@ justify-content: center;
     top: 195vw;
     width: 28.85vw;
     height: 28.05vw;
+    z-index: 1;
 }
+.lemon, .redsweet, .strawberry, .orangesweet, .cruasan, .blueberry, .pinksweet, .plemon {
+        position: absolute;
+        z-index: 2;
+        transition: transform 0.2s;
+    }
 .lemon {
     width: 11.51vw;
     height: 11.51vw;
-    position: absolute;
     left: 8vw;
     top: 207vw;
 }
 .redsweet {
-    position: absolute;
     width: 10.99vw;
     height: 10vw;
     left: 21vw;
     top: 195vw;
 }
 .strawberry {
-    position: absolute;
     width: 6.56vw;
     height: 6.20vw;
     left: 25vw;
     top: 215vw;
 }
 .orangesweet {
-    position: absolute;
     width: 10.99vw;
     height: 10vw;
     left: 17vw;
     top: 223vw;
 }
 .cruasan {
-    position: absolute;
     width: 14.84vw;
     height: 16.15vw;
     right: 15vw;
     top: 195vw;
 }
 .blueberry {
-    position: absolute;
     width: 6.46vw;
     height: 6.25vw;
     top: 215vw;
     right: 13vw;
 }
 .pinksweet {
-    position: absolute;
     width: 14.58vw;
     height: 13.23vw;
     top: 214vw;
     right: 22vw;
 }
 .plemon {
-    position: absolute;
     width: 6.82vw;
     height: 7.60vw;
     top: 227vw;
     right: 20vw;
 }
-.okbutton {
+#okButton {
     display: flex;
     justify-content: center;
 }
-.ok_button {
+
+.choiseimgg {
+    background-image: url('..\\images/choisemeal.svg');
+    background-position: center center;
+    background-size: cover;
     position: absolute;
+    left: 5vw;
+    top: 185vw;
+    width: 88.02vw;
+    height: 6.25vw;
+}
+
+.yourmeal {
+    background-image: url('..\\images/yourmeal.svg');
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 34vw;
+    top: 185vw;
+    width: 30.52vw;
+    height: 6.25vw;
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+.choiseButton {
+display: flex;
+justify-content: center;
+}
+.ok {
     width: 9.06vw;
     height: 5.16vw;
-    top: 230vw;
+    position: absolute;
+    top: 228vw;
+    left: 46vw;
+    cursor: pointer;
 }
+.dragging {
+    opacity: 0.7;
+    transform: scale(1.1);
+    z-index: 10 !important;
+}
+.plate-highlight {
+    filter: drop-shadow(0 0 10px rgba(255, 111, 0, 0.7));
+}
+.on-plate {
+    z-index: 2;
+}
+
 .section5 {
     width: 100vw;
     height: 66.15vw;
@@ -518,9 +582,9 @@ justify-content: center;
 }
 .restangles {
     position: absolute;
-    width: 74.32vw;
-    height: 46.35vw;
-    top: 250vw;
+    width: 67.55vw;
+    height: 42.14vw;
+    top: 240vw;
 }
 .wish {
     position: absolute;
@@ -528,45 +592,71 @@ justify-content: center;
     font-family:swanky-and-moo-moo;
     font-size: 5vw;
     text-align: center;
-    top: 255vw;
+    left: 32vw;
+    top: 244.5vw;
 }
+.wish-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 17.29vw;
+    height: 5.16vw;
+    top: 285vw;
+    left: 40vw;
+}
+.wish-fulfilled {
+    color: #ffffff;
+    font-family:swanky-and-moo-moo;
+    font-size: 4.6vw;
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
 .heart {
     position: absolute;
     width: 2.86vw;
     height: 2.50vw;
-    top: 256vw;
+    top: 246vw;
     left: 28vw;
 }
 .heart_2 {
     position: absolute;
     width: 2.86vw;
     height: 2.50vw;
-    top: 256vw;
+    top: 246vw;
     right: 28vw;
 }
 .idk {
     position: absolute;
-    width: 62.55vw;
-    height: 26.41vw;
-    top: 262vw;
+    width: 56.88vw;
+    height: 23.96vw;
+    top: 252vw;
 }
-.makewish {
+.wish-input {
     position: absolute;
+    width: 50vw;
     color: #ffffff;
     font-family:TenorSans;
     font-size: 1.88vw;
     left: 25vw;
-    top: 265vw;
+    top: 255vw;
+    background: transparent;
+    outline: none;          
+    padding: 0.5vw 1vw;     
+    border: none !important;        
+    outline: none !important;       
+    box-shadow: none !important;  
 }
-.makebutton {
-    display: flex;
-    justify-content: center;
+.wish-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
-.make_button {
+.img {
     position: absolute;
     width: 17.29vw;
     height: 5.16vw;
-    top: 300vw;
+    top: 1vw;
+    left: 1vw;
 }
 .section6 {
     width: 100vw;
@@ -591,5 +681,5 @@ color: #ffffff;
 font-family:swanky-and-moo-moo;
 filter: blur(0.5px);
 top: 310vw;
-font-size: 7.45vw;
+font-size: 7.49vw;
 }

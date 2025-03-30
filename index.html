@@ -54,33 +54,40 @@
         <div class="choiseimg"></div>
         <img class="cb" src="images/buttonchoise.svg" alt="button">
     </div>
+<div class="slide-wrapper">
 <div class="slider-container">
 <div class="slider">
 <div class="slide prev-2" data-index="0">
 <div class="slide-content">
 <div class="slide-image-container">
-    <img class="slide-image" src="images/limonitsa.svg" alt="Лимонница">
+<img class="slide-image" src="images/limonitsa.svg" alt="Лимонница">
 </div>
+<div class="slide-title-naming">
 <div class="slide-title">Лимонница</div>
 <div class="slide-title-white">Лимонница</div>
+</div>
 </div>
 </div>
 <div class="slide prev-1" data-index="1">
 <div class="slide-content">
 <div class="slide-image-container">
-    <img class="slide-image" src="images/perelivnita.svg" alt="Переливница">
+<img class="slide-image" src="images/perelivnita.svg" alt="Переливница">
 </div>
+<div class="slide-title-naming">
 <div class="slide-title">Переливница</div>
 <div class="slide-title-white">Переливница</div>
+</div>
 </div>
 </div>
 <div class="slide active" data-index="2">
 <div class="slide-content">
 <div class="slide-image-container">
-    <img class="slide-image" src="images/callima.svg" alt="Каллима">
+<img class="slide-image" src="images/callima.svg" alt="Каллима">
 </div>
+<div class="slide-title-naming">
 <div class="slide-title">Каллима</div>
 <div class="slide-title-white">Каллима</div>
+</div>
 </div>
 </div>
 <div class="slide next-1" data-index="3">
@@ -88,8 +95,11 @@
 <div class="slide-image-container">
 <img class="slide-image" src="images/elima.svg" alt="Элима">
 </div>
+<div class="slide-title-naming">
 <div class="slide-title">Элима</div>
 <div class="slide-title-white">Элима</div>
+</div>
+</div>
 </div>
 </div>
 <div class="slide next-2" data-index="4">
@@ -97,44 +107,48 @@
 <div class="slide-image-container">
 <img class="slide-image" src="images/komplana.svg" alt="Комплана">
 </div>
+<div class="slide-title-naming">
 <div class="slide-title">Комплана</div>
 <div class="slide-title-white">Комплана</div>
 </div>
 </div>
 </div>
 </div>
+</div>
 </section>
 <section class="section4">
-<div class="eat">
-    <p class="mealback">Собери своё фестивальное блюдо</p>
-    <p class="meal">Собери своё фестивальное блюдо</p>
-</div>
 <div class="plate">
     <img class="plateimg" src="images/plate.svg" alt="тарелка">
 </div>
-<img class="lemon" src="images/lemon.svg" alt="лимон">
-<img class="redsweet" src="images/redsweet.svg" alt="красная конфета">
-<img class="strawberry" src="images/strawberry.svg" alt="клубника">
-<img class="orangesweet" src="images/orangesweet.svg" alt="оранжевая конфета">
-<img class="cruasan" src="images/cruasan.svg" alt="круасан">
-<img class="blueberry" src="images/blueberry.svg" alt="голубика">
-<img class="pinksweet" src="images/pinksweet.svg" alt="розовая конфета">
-<img class="plemon" src="images/plemon.svg" alt="племон">
-<div class="okbutton">
-    <img class="ok_button" src="images/okbutton.svg" alt="кнопка ок">
+<div id="dragzone" class="dragzone"></div>
+<img id="draggable"  class="lemon draggable" draggable="true" src="images/lemon.svg" alt="лимон">
+<img id="draggable" draggable="true" class="redsweet draggable" src="images/redsweet.svg" alt="красная конфета">
+<img id="draggable" draggable="true" class="strawberry draggable" src="images/strawberry.svg" alt="клубника">
+<img id="draggable" draggable="true" class="orangesweet draggable" src="images/orangesweet.svg" alt="оранжевая конфета">
+<img id="draggable" draggable="true" class="cruasan draggable" src="images/cruasan.svg" alt="круасан">
+<img id="draggable" draggable="true" class="blueberry draggable" src="images/blueberry.svg" alt="голубика">
+<img id="draggable" draggable="true" class="pinksweet draggable" src="images/pinksweet.svg" alt="розовая конфета">
+<img id="draggable" draggable="true" class="plemon draggable" src="images/plemon.svg" alt="племон">
+<div id="okButton"></div>
+<div class="choisemeal">
+    <div class="choiseimgg"></div>
+    <img class="ok" src="images/ok.svg" alt="button">
+</div>
 </div>
 </section>
 <section class="section5">
 <div class="tikcet">
     <img class="restangles" src="images/restangles.svg" alt="квадратики">
-    <p class="wish">Загадай желание</p>
     <img class="heart" src="images/heart.svg" alt="сердечко">
     <img class="heart_2" src="images/heart2.svg" alt="сердечко2">
     <img class="idk" src="images/idk.svg" alt="idk">
-    <p class="makewish">Напишите своё желание</p>
+    <input type="text" class="wish-input" placeholder="Напишите своё желание...">
 </div>
-<div class="makebutton">
-    <img class="make_button" src="images/makebutton.svg" alt="кнопка загадать">
+<div class="makewish">
+    <p class="wish">Загадай желание</p>
+    <button id="makeButton" class="wish-button">
+        <img class="img" src="images/yes.svg" alt="Исполнить желание">
+    </button>
 </div>
 </section>
 <section class="section6">
