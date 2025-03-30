@@ -2,29 +2,47 @@
     .flashlight {
         filter: blur(30px);
     }
+    .name-back {
+        filter: blur(5px);
+    }
 }
 @media (max-width: 1280px) {
     .flashlight {
         filter: blur(25px);
+    }
+    .name-back {
+        filter: blur(4px);
     }
 }
 @media (max-width: 1024px) {
     .flashlight {
         filter: blur(20px);
     }
+    .name-back {
+        filter: blur(3px);
+    }
 }
 @media (max-width: 768px) {
     .flashlight {
         filter: blur(15px);
+    }
+    .name-back {
+        filter: blur(2px);
     }
 }
 @media (max-width: 414px) {
     .flashlight {
         filter: blur(10px);
     }
+    .name-back {
+        filter: blur(1.5px);
+    }
 }
 @media (max-width: 360px) {
     .flashlight {
         filter: blur(5px);
+    }
+    .name-back {
+        filter: blur(1px);
     }
 }

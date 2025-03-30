@@ -452,7 +452,7 @@ justify-content: center;
 .dragzone {
     width: 28.85vw;
     height: 28.05vw;
-    position: absolute;
+    position: relative;
     top: 195vw;
     left: 35.5vw;
     z-index: 2;
