@@ -154,11 +154,23 @@ left: 25vw;
     top: 15vw;
     right: 24.5vw;
     }
-.name {
+.name-back {
     position: absolute;
-    width: 49.634vw;
-    height: 12.597vw;
+    font-size: 9.95vw;
+    font-family: swanky-and-moo-moo;
     top: 27vw;
+    color: #FF6F00;
+    filter: blur(6px);
+    -webkit-text-stroke: 6px #FF6F00;
+}
+.name-front {
+    position: absolute;
+    font-size: 9.95vw;
+    font-family: swanky-and-moo-moo;
+    top: 27vw;
+    color: #ffffff;
+    filter: blur(0.5px);
+    
 }
 .button {
     position: absolute;
