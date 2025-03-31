@@ -89,9 +89,7 @@ let currentDraggedElement = null;
 let offsetX, offsetY;
 
 document.querySelectorAll('.draggable').forEach(item => {
-  // Начало перетаскивания
   item.addEventListener('dragstart', function(event) {
-    // Сохраняем ссылку на сам элемент
     currentDraggedElement = this;
     event.dataTransfer.setData('text/uri-list', currentDraggedElement.src);
     event.dataTransfer.setData('text/plain', currentDraggedElement.id);
@@ -99,10 +97,8 @@ document.querySelectorAll('.draggable').forEach(item => {
     const rect = event.target.getBoundingClientRect();
     offsetX = event.clientX - rect.left;
     offsetY = event.clientY - rect.top;
-    // Визуальный эффект
     this.style.opacity = '0.7';
     this.style.zIndex = '1000';
-    // Сохраняем элемент в дататрансфер
     event.dataTransfer.setDragImage(this, offsetX, offsetY);
   });
 
@@ -125,11 +121,9 @@ event.preventDefault();
 if (!currentDraggedElement) return;
 
 const dropRect = dragzone.getBoundingClientRect();
-// Calculate the position as a percentage of the drop container's dimensions
 const percentLeft = ((event.clientX - dropRect.left - offsetX) / dropRect.width) * 100;
 const percentTop = ((event.clientY - dropRect.top - offsetY) / dropRect.height) * 100;
 
-// Append element to the container so it stays on the plate
 dragzone.appendChild(currentDraggedElement);
 currentDraggedElement.style.left = `${percentLeft}%`;
 currentDraggedElement.style.top = `${percentTop}%`;
@@ -145,8 +139,7 @@ makeButton.addEventListener('click', function() {
 
 });
 
-// Функции:
-//Функция для анимации
+
   function animIMG() {
     let images = document.querySelectorAll('.struct_arch img')
   
@@ -155,12 +148,12 @@ makeButton.addEventListener('click', function() {
     }
   }
 
-  // Функция для перевода пикселей в vw
+
   function pxToVw(px) {
     return (px / window.innerWidth) * 100;
   }
 
-  // Функция для перевода vw в пиксели
+
   function vwToPx(vw) {
     return (vw * window.innerWidth) / 100;
   }
